@@ -16,12 +16,12 @@ import jakarta.enterprise.inject.spi.CDI;
 import lombok.extern.slf4j.Slf4j;
 
 //@Disabled("TODO: test fails for unknown reason")
-@Slf4j class CDITest
+@Slf4j class SandboxTestCDIWeldJPMS
 {
 	private static SeContainer seContainer;
 
 	// load greeter inside context
-	private CDITestContext context;
+	private CDIContext context;
 	// load greeter directly
 	private CDIGreeter greeter;
 
@@ -48,7 +48,7 @@ import lombok.extern.slf4j.Slf4j;
 
 	@BeforeEach void beforeEach()
 	{
-		context = CDI.current().select(CDITestContext.class).get();
+		context = CDI.current().select(CDIContext.class).get();
 		greeter = CDI.current().select(CDIGreeter.class).get();
 	}
 

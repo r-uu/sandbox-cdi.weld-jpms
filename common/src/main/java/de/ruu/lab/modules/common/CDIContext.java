@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.experimental.Accessors;
 
 @Accessors(fluent = true)
-public class CDITestContext
+public class CDIContext
 {
 	@Getter
 	@Inject
