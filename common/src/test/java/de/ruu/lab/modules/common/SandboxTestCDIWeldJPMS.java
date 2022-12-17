@@ -15,7 +15,6 @@ import jakarta.enterprise.inject.se.SeContainerInitializer;
 import jakarta.enterprise.inject.spi.CDI;
 import lombok.extern.slf4j.Slf4j;
 
-//@Disabled("TODO: test fails for unknown reason")
 @Slf4j class SandboxTestCDIWeldJPMS
 {
 	private static SeContainer seContainer;
