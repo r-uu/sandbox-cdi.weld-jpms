@@ -1,4 +1,4 @@
-package de.ruu.lab.modules.common;
+package de.ruu.lab.modules.item;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import de.ruu.lab.modules.item.CDIContext;
+import de.ruu.lab.modules.item.CDIGreeter;
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
 import jakarta.enterprise.inject.spi.CDI;
